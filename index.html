@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Fibonacci !</title>
+</head>
+<body>
+    <script>
+    
+    var user = prompt('Enter your number');
+    var a = 0; 
+    var b = 1;
+    let fib=[];
+    i = 1
+    function fibo(times){
+        while (i <= times){
+        i ++ ;
+        b = [a, a = b+a][0];//<=====we will swap the first with second and second with the addition of the fist and second
+        user = times;
+        fib.push(a);
+          
+    }
+   
+  }
+    fibo(user)
+    console.log(fib)//<===if you want to see all the Fibonacci sequence.
+    console.log('fibo number:',a)
+    </script>
+   <noscript>
+        "Your browser's JavaScript engine has been disabled.
+         This may cause some parts of this website to not function correctly. 
+         Please re-enable the JavaScript engine via your browser settings."
+   </noscript> 
+</body>
+</html>
